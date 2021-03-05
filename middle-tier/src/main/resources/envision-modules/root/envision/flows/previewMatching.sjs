@@ -10,7 +10,8 @@ var flowStep = '3'
 var uri = '/envision/datahub/data/CoastalEmployees/55002.json'
 
 let flowDoc= datahub.flow.getFlow(flowName);
-const step = flowDoc.steps[flowStep]
+const stepRef = flowDoc.steps[flowStep]
+const step =
 const options = step.options
 
 let stepDefinition = datahub.flow.step.getStepByNameAndType(step.stepDefinitionName, step.stepDefinitionType);
